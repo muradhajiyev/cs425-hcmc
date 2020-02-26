@@ -1,6 +1,8 @@
 # HolyCross Medical Center - _University TA election project_
 
+
 # **----------- **Configuring Project** ---------------**
+
 1. Create database in mysql
 2. Set database connection configuration in **application.properties** file.
 
