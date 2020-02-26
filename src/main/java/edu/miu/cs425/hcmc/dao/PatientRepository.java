@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface PatientRepository extends JpaRepository<Patient, Integer> {
     List<Patient> findAllByOrderByFullNameAsc();
-    @Query(value = "SELECT p.* FROM patient p WHERE FLOOR(DATEDIFF(NOW(), p.date_of_birth)/365.25) >= 65 ORDER BY p.date_of_birth DESC", nativeQuery = true)
+    @Query(value = "SELECT p.* FROM patient p WHERE FLOOR(DATEDIFF(NOW(), p.date_of_birth)/365.25) >= 65 ORDER BY p.date_of_birth ASC", nativeQuery = true)
     List<Patient> findAllElderPatients();
 }
