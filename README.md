@@ -1,13 +1,6 @@
-# cs425-hcmc
-# HolyCross Medical Center - University TA election project
+# HolyCross Medical Center - _University TA election project_
 
-![Home Screen]("/screenshots/Screen1.png")
-![All Patients List]("/screenshots/Screen2.png")
-![Only Elder Patients List]("/screenshots/Screen3.png")
-![Patient Registration]("/screenshots/Screen4.png")
-
-
-# ----------- **Configuring Project** ---------------
+# **----------- **Configuring Project** ---------------**
 1. Create database in mysql
 2. Set database connection configuration in **application.properties** file.
 
@@ -15,9 +8,18 @@ All necessary **tables** will be created and **dummy data** will be inserted to 
 **flywaydb** has been used to provide this functionality.
 
 
-**Used**
+**----------Used-----------**
 
 1. Thymeleaf (Master Layout)
 2. flywaydb
 3. JPA
-4. MYSQL database
+4. MYSQL 
+
+
+**------------------ Screenshots ------------------**
+
+
+![Home Screen](/screenshots/Screen1.png)
+![All Patients List](/screenshots/Screen2.png)
+![Only Elder Patients List](/screenshots/Screen3.png)
+![Patient Registration](/screenshots/Screen4.png)
