@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>HolyCross Medical Center - Home Page</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<!-- header.html -->
+<div th:replace="fragments/header :: header"></div>
+
+<div layout:fragment="content"></div>
+
+<div th:replace="fragments/footer :: footer"></div>
+<div>
+
+</div>
+</body>
+</html>

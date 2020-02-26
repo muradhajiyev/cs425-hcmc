@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{fragments/main_layout}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HolyCross Medical Center - Patients List</title>
+</head>
+<body>
+    <div layout:fragment="content" class="container content">
+        <h3 class="title" th:text="${title}"></h3>
+        <a class="btn btn-primary register-btn" th:href="@{/patient/register}">Register a new patient</a>
+        <hr style="clear:both;">
+
+        <table class="table table-bordered">
+            <thead class="thead-primary">
+                <tr>
+                    <th>#</th>
+                    <th>Patient Number</th>
+                    <th>Full Names</th>
+                    <th>Email</th>
+                    <th>Contact Phone Number</th>
+                    <th>Date of birth</th>
+                    <th>Out Patient?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="patient : ${patients}">
+                    <td th:text="${patientStat.index+1}"></td>
+                    <td th:text="${patient.patientNumber}"></td>
+                    <td th:text="${patient.fullName}"></td>
+                    <td th:text="${patient.email}"></td>
+                    <td th:text="${patient.phoneNumber}"></td>
+                    <td th:text="${#dates.format(patient.dateOfBirth, 'dd-MM-yyyy')}"></td>
+                    <td th:text="${patient.isAnOutPatient ? 'Yes' : 'No'}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

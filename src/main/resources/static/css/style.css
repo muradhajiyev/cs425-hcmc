@@ -1,0 +1,29 @@
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+.content {
+    margin-top: 20px;
+}
+
+.thead-primary{
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.title{
+    float: left;
+}
+
+.register-btn{
+    float: right;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}

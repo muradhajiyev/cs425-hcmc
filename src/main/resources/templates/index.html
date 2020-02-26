@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{fragments/main_layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>HolyCross Medical Center - Home Page</title>
+</head>
+<body>
+    <div layout:fragment="content" class="container content">
+        <h2>Welcome to the HCMC Patients Management System (PMS)</h2>
+        <hr>
+        <p>At HolyCross Medical Center, we are known for providing the very best in top-quality health-care to our patients.</p>
+        <p>On this system, you can see the <a th:href="@{/patient/list}">list of our Patients, </a>including the special <a th:href="@{/patient/elder/list}">list of our Elderly Patients.</a> You can also <a th:href="@{/patient/register}">register a new Patient.</a> </p>
+
+        <p>These options can also be accessed through clicking the appropriate menu item, located on the menu-bar above.</p>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+</body>
+</html>

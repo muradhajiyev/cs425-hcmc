@@ -1,0 +1,21 @@
+<header th:fragment="header"
+        xmlns:th="http://www.w3.org/1999/xhtml">
+    <nav class="navbar navbar-expand-sm bg-primary navbar-light">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" th:href="@{/}">
+                    HolyCross Medical Center
+                </a>
+            </div>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/patient/list}">Patients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/patient/elder/list}">Elder Patients</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

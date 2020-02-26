@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{fragments/main_layout}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HolyCross Medical Center - Patient Register</title>
+</head>
+<body>
+    <div layout:fragment="content" class="container content">
+        <h3 class="title">Register a new patient</h3>
+        <hr style="clear:both;">
+
+        <form action="#" th:action="@{/patient/save}"
+              th:object="${patient}" method="POST">
+
+            <input type="text" th:field="*{patientNumber}"
+                   class="form-control mb-4 col-4" placeholder="Patient Number">
+
+            <input type="text" th:field="*{fullName}"
+                   class="form-control mb-4 col-4" placeholder="Full Name">
+
+            <input type="email" th:field="*{email}"
+                   class="form-control mb-4 col-4" placeholder="Email">
+
+            <input type="text" th:field="*{phoneNumber}"
+                   class="form-control mb-4 col-4" placeholder="Phone Number">
+
+            <div class="form-check">
+                <label for="isOut" class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="" id="isOut" th:field="*{isAnOutPatient}">
+                    Is An out Patient?
+                </label>
+
+            </div>
+
+            <button type="submit" class="form-control btn btn-info col-2">Register</button>
+
+        </form>
+    </div>
+</body>
+</html>
