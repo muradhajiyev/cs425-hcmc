@@ -1,7 +1,7 @@
 # cs425-hcmc
 # HolyCross Medical Center - University TA election project
 
-![Home Screen]("/screenshots/Screen1.png")
+![Home Screen](/screenshots/Screen1.png)
 ![All Patients List]("/screenshots/Screen2.png")
 ![Only Elder Patients List]("/screenshots/Screen3.png")
 ![Patient Registration]("/screenshots/Screen4.png")
